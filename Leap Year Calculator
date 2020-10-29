@@ -1,0 +1,26 @@
+public static boolean isLeapYear(int year)
+            {
+                if (year < 1 | year > 9999)
+                    return false;
+                else
+                    if (year % 4 == 0)
+                    {
+                        if (year % 100 == 0)
+                        {
+                            if (year % 400 == 0)
+                            {
+                                return true;
+                            }
+                            else return false;
+                        }
+                        return true;
+                    }
+                    return false;
+            }
+            
+   //Add below lines to main method to see the output
+        System.out.println("Leap year");
+        System.out.println(isLeapYear(100));
+        System.out.println(isLeapYear(1700));
+        System.out.println(isLeapYear(1600));
+        System.out.println(isLeapYear(4000));
