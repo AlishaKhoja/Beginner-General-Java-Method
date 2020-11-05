@@ -1,0 +1,31 @@
+//Teen Number Checker
+            public static boolean hasTeen(int x, int y, int z)
+            {
+                if (x >= 13 && x <= 19)
+                    return true;
+                else
+                    if (y >= 13 && y <= 19)
+                        return true;
+                    else
+                        if (z >= 13 && z <= 19)
+                            return true;
+                        else
+                            return false;
+            }
+
+            public static boolean isTeen(int x)
+            {
+                if (x >= 13 && x <= 19)
+                    return true;
+                else
+                    return false;
+            }
+
+//Add below lines to main method to see the output
+        System.out.println("Teen Number Checker");
+        System.out.println(hasTeen(1, 9, 17));
+        System.out.println(hasTeen(12, 13, 19));
+        System.out.println(hasTeen(20, 21, 25));
+        System.out.println(isTeen(13));
+        System.out.println(isTeen(19));
+        System.out.println(isTeen(30));
