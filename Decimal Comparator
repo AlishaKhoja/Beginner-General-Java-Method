@@ -1,0 +1,20 @@
+//DecimalComparator -- Compares 3 decimal numbers along with any numbers before the decimal
+    public static boolean areEqualByThreeDecimalPlaces(double var1, double var2) {
+        var1 = (int) (var1 * 1000);
+        System.out.println(var1);
+        var2 = (int) (var2 * 1000);
+        System.out.println(var2);
+
+        if (var1 == var2)
+            return true;
+        else
+            return false;
+    }
+    
+//Add below lines to main method to see the output
+        System.out.println("Decimal Comparator up to 3 decimal places");
+        System.out.println(areEqualByThreeDecimalPlaces(1.123, 1.1234555));
+        System.out.println(areEqualByThreeDecimalPlaces(1.134, 1.1234555));
+        System.out.println(areEqualByThreeDecimalPlaces(-1.1234, 1.1234555));
+        System.out.println(areEqualByThreeDecimalPlaces(1.1234, -1.1234555));
+        System.out.println(areEqualByThreeDecimalPlaces(2.1232, 2.1235555));
